@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@theme {
+  --color-ink: #211D1A;       /* headings, primary text */
+  --color-ember: #D9552B;     /* signature accent - CTA, highlights */
+  --color-marigold: #E8A93B;  /* secondary accent */
+  --color-paper: #F3ECDD;     /* page background */
+  --color-card: #FFFDF8;      /* card surfaces */
+  --color-steel: #8B8177;     /* muted secondary text */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
