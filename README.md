@@ -2,7 +2,7 @@
 
 Landing page for **Zaiqa E Sandwich**, a grilled sandwich, cold coffee, and milkshake shop in Ballia Bazaar, Begusarai, Bihar. Built as an Instagram bio-link page in a portfolio/editorial style, designed to get visitors to physically visit the shop.
 
-🔗 **Live site:** _(add your Vercel URL here once deployed)_
+🔗 **Live site:** _(https://zaiqaesandwich.vercel.app/)_
 
 ## Tech Stack
 
