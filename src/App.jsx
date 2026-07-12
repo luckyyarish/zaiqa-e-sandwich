@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play, Menu as MenuIcon, X } from "lucide-react";
+import { Play, Menu as MenuIcon, X, Phone } from "lucide-react";
 import { siInstagram } from "simple-icons/icons";
 import logo from "./assets/logo.jpg";
 import sandwichImg from "./assets/sandwich.png";
@@ -14,9 +14,9 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-const SectionLabel = ({ number, label }) => (
+const SectionLabel = ({ label }) => (
   <p className="text-xs tracking-[0.2em] text-ember font-medium mb-3">
-    {number} — {label}
+    {label}
   </p>
 );
 
@@ -256,7 +256,7 @@ const App = () => {
 
       {/* Menu */}
       <section id="menu" className="max-w-5xl mx-auto px-6 py-24">
-        <SectionLabel number="01" label="MENU" />
+        <SectionLabel label="MENU" />
         <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
           What we sell
         </h2>
@@ -368,7 +368,7 @@ const App = () => {
         id="reels"
         className="max-w-5xl mx-auto px-6 py-24 border-t border-ink/10"
       >
-        <SectionLabel number="02" label="SOCIAL" />
+        <SectionLabel label="SOCIAL" />
         <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
           See us in action
         </h2>
@@ -395,13 +395,13 @@ const App = () => {
         id="reviews"
         className="max-w-5xl mx-auto px-6 py-24 border-t border-ink/10"
       >
-        <SectionLabel number="03" label="WORD OF MOUTH" />
+        <SectionLabel label="WORD OF MOUTH" />
         <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4">
           What people say
         </h2>
         <p className="text-steel text-sm mb-16 max-w-md">
-          Real Instagram comments from real customers. Visit us and
-          leave your own comment to be featured here.
+          Real Instagram comments from real customers. Visit us and leave your
+          own comment to be featured here.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {reelComments.map((c, i) => (
@@ -428,7 +428,7 @@ const App = () => {
         id="map"
         className="max-w-5xl mx-auto px-6 py-24 border-t border-ink/10"
       >
-        <SectionLabel number="04" label="FIND US" />
+        <SectionLabel label="FIND US" />
         <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
           Locate our shop
         </h2>
@@ -451,7 +451,7 @@ const App = () => {
       {/* Footer / Visit */}
       <footer id="contact" className="bg-ink text-paper py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <SectionLabel number="05" label="VISIT" />
+          <SectionLabel label="CONTACT" />
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
             Come taste it yourself
           </h2>
@@ -464,6 +464,23 @@ const App = () => {
             </p>
             <p className="text-paper/70 text-base mb-8">
               Open daily, 3:30 PM to 11:00 PM
+            </p>
+
+            <p className="text-paper/70 text-base mb-8 flex items-center gap-2">
+              <Phone className="w-4 h-4" />
+              <a
+                href="tel:+918539000386"
+                className="hover:text-marigold transition-colors"
+              >
+                +91 85390 00386
+              </a>
+              <span className="text-paper/30">/</span>
+              <a
+                href="tel:+918709437937"
+                className="hover:text-marigold transition-colors"
+              >
+                +91 87094 37937
+              </a>
             </p>
             <div className="flex flex-wrap gap-4">
               <a
