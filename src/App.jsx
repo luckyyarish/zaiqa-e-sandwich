@@ -42,6 +42,7 @@ const reels = [
   { video: "/videos/reel1.mp4", poster: "/posters/reel1.jpg" },
   { video: "/videos/reel2.mp4", poster: "/posters/reel2.jpg" },
   { video: "/videos/reel3.mp4", poster: "/posters/reel3.jpg" },
+  { video: "/videos/reel4.mp4", poster: "/posters/reel4.jpg" },
 ];
 
 const shakes = [
@@ -60,6 +61,10 @@ const reelComments = [
     text: "Zaiqa-e-Sandwich serves one of the best sandwiches I've ever had. Absolutely delicious! 🥪🔥",
   },
   { user: "@tabrezprince8", text: "Delicious sandwich bro. ❤️❤️❤️" },
+  {
+    user: "@_____duaaa._",
+    text: "Sandwich ka taste toh genuinely next level tha 😋✨",
+  },
 ];
 
 const ReelPlayer = ({ video, poster, isPlaying, onPlay, registerRef }) => {
@@ -438,7 +443,7 @@ const App = () => {
         >
           <iframe
             title="Zaiqa E Sandwich Location"
-            src="https://www.google.com/maps?q=Cake+4+All,Ballialakhminia-III,Bihar&t=k&z=18&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400.887551346028!2d86.312556!3d25.4190702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1f7599d8795d3%3A0x127c0d2992704ec0!2sZAIQA%20E%20SANDWICH!5e1!3m2!1sen!2sin!4v1788073069919!5m2!1sen!2sin"
             className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}
             allowFullScreen
