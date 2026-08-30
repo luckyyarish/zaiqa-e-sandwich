@@ -312,7 +312,7 @@ const App = () => {
             <img
               src={coldCoffeeImg}
               alt="Cold Coffee"
-              className="w-24 h-24 object-contain mx-auto my-4"
+              className="w-24 h-36 object-contain mx-auto my-4"
             />
             <ul className="divide-y divide-ink/10 mt-auto">
               <li className="flex justify-between py-4 text-lg">
