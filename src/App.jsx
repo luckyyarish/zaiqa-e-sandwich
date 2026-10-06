@@ -29,8 +29,8 @@ const navItems = [
 
 const menuItems = [
   "VEG GRILL",
-  "PANEER CHEESE",
-  "CORN CHEESE",
+  "PANEER GRILL",
+  "CORN GRILL",
   "PANEER CORN CHEESE",
   "COLD COFFEE",
   "STRAWBERRY SHAKE",
@@ -43,6 +43,8 @@ const reels = [
   { video: "/videos/reel2.mp4", poster: "/posters/reel2.jpg" },
   { video: "/videos/reel3.mp4", poster: "/posters/reel3.jpg" },
   { video: "/videos/reel4.mp4", poster: "/posters/reel4.jpg" },
+  { video: "/videos/reel5.mp4", poster: "/posters/reel5.jpg" },
+  { video: "/videos/reel6.mp4", poster: "/posters/reel6.jpg" },
 ];
 
 const shakes = [
@@ -64,6 +66,14 @@ const reelComments = [
   {
     user: "@_____duaaa._",
     text: "Sandwich ka taste toh genuinely next level tha 😋✨",
+  },
+   {
+    user: "@aamir__raza21",
+    text: "Test Verified 🔥 Always visit 🙌",
+  },
+  {
+    user: "@abhishek_kumar_malakar_",
+    text: "Taste bahut yummy 😋 tha brohh. Superb 😍",
   },
 ];
 
@@ -225,7 +235,7 @@ const App = () => {
           </p>
           <div className="flex items-center gap-4 mb-8">
             <div className="w-24 h-0.5 bg-gradient-to-r from-marigold via-ember to-ink" />
-            <span className="text-xs text-steel">3:30 PM – 11:00 PM</span>
+            <span className="text-xs text-steel">4:00 PM – 10:00 PM</span>
           </div>
           <a
             href="#menu"
@@ -468,7 +478,7 @@ const App = () => {
               <br /> Ballia, Begusarai, Bihar - 851211
             </p>
             <p className="text-paper/70 text-base mb-8">
-              Open daily, 3:30 PM to 11:00 PM
+              Open daily, 4:00 PM to 10:00 PM
             </p>
 
             <p className="text-paper/70 text-base mb-8 flex items-center gap-2">
